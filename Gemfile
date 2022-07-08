@@ -60,6 +60,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # add gem 'net-smtp'
 gem 'net-smtp'
 
+#add net-pop
+gem 'net-pop', require: false
 
+#add net-imap
+gem 'net-imap', require: false
 
 gem "devise", "~> 4.8"
