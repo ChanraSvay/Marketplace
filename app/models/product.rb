@@ -4,7 +4,7 @@ class Product < ApplicationRecord
   has_rich_text :description
 
   enum condition: {
-    new: 1,
-    used: 2
+    new_item: 1,
+    used_item: 2
   }
 end
