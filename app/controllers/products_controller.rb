@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: %i[ show edit update destroy place_order ]
+  before_action :set_product, only: %i[ show edit update destroy place_oder ]
   before_action :set_form_vars, only: %i[ new edit ]
   before_action :authenticate_user!, except: [:index, :show]
   before_action :authorize_user, only: [:edit, :update, :destroy]
@@ -61,16 +61,16 @@ class ProductsController < ApplicationController
     end
   end
 
-  def place_order
-    Order.create(
-      product_id: @product_id,
-      seller_id: @product.user_id,
-      buyer_id: current_user.id
-    )
+   def place_order
+      Order.create(
+        product_id: @product_id,
+        seller_id: @product.user_id,
+        buyer_id: current_user.id
+      )
 
-    @product.update(sold: true)
-    redirect_to order_success_path
-  end
+      @product.update(sold: true)
+      redirect_to order_success_path
+    end
 
   private
     # Use callbacks to share common setup or constraints between actions.
