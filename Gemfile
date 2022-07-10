@@ -82,3 +82,5 @@ gem "paddle_pay", "~> 0.2"
 # To use Receipts gem for creating invoice and receipt PDFs, also include:
 gem "receipts", "~> 2.0"
 
+
+gem "matrix", "~> 0.4.2"

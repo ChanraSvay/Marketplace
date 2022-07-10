@@ -3,3 +3,8 @@ load File.expand_path("spring", __dir__)
 APP_PATH = File.expand_path('../config/application', __dir__)
 require_relative "../config/boot"
 require "rails/commands"
+
+stripe:
+    public_key: pk_test_51LJpRtJroMHvLQSENDQP8dVJCofTxabHQHNQQuelFgzLcupoi0MkR78xvo2i0yrGLGGZ7Ejbdd20VcmBBoGZlaVF00Bit8GzUY
+    private_key: sk_test_51LJpRtJroMHvLQSEi0ISW00enC6VuGMaIzrjQAvFZfbCjcoxOp3qeWTGDNNVgPmIHX9asT7WnPda9rNim8x1rbFU00NYNkH3cP
+    signing_secret: whsec_0a4d08c661ba923f19b7425932a892594c761aa431c32b0deaa52c644f205424
