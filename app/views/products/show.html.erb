@@ -8,11 +8,12 @@
   <% end %>
 </div>
 
-<% if current_user && !@product.sold %>
+<% if @product.sold %>
+<h2>SOLD</h2>
+<% elsif current_user && !@product.sold %>
 <%= button_to "Buy now", place_order_path %>
 <% else %>
-<p> Product no longer available
-</p>
+<p> Please log in to purchase</p>
 <% end %>
 <p>
   <strong>Title:</strong>
