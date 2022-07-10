@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root 'pages#home'
 
   post 'products/:id/order', to: 'products#place_order', as: 'place_order'
-  post 'checkout/create', to: 'checkout#create'
+  # post 'checkout/create', to: 'checkout#create'
 
   get 'pages/success', to: 'pages#success', as: 'order_success'
 
