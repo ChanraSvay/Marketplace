@@ -9,6 +9,13 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
+  def search
+    @products = Product.where("titl LIKE ?", "%" + params[:q] + "%")
+    products_path
+  end
+
+  
+
   # GET /products/1 or /products/1.json
   def show
   end
@@ -17,6 +24,7 @@ class ProductsController < ApplicationController
   def new
     @product = Product.new
   end
+
 
   # GET /products/1/edit
   def edit
