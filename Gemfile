@@ -67,3 +67,18 @@ gem 'net-pop', require: false
 gem 'net-imap', require: false
 
 gem "devise", "~> 4.8"
+
+gem "pay", "~> 3.0"
+
+# To use Stripe, also include:
+gem "stripe", "~> 6.0"
+
+# To use Braintree + PayPal, also include:
+gem "braintree", "~> 4.7"
+
+# To use Paddle, also include:
+gem "paddle_pay", "~> 0.2"
+
+# To use Receipts gem for creating invoice and receipt PDFs, also include:
+gem "receipts", "~> 2.0"
+
