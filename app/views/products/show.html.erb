@@ -11,7 +11,7 @@
 <% if @product.sold %>
 <h2>SOLD</h2>
 <% elsif current_user && !@product.sold %>
-<%= button_to "Buy now", place_order_path %>
+<%= button_to "Buy now", place_order_path, class: "nav-link"%>
 <% else %>
 <p> Please log in to purchase</p>
 <% end %>

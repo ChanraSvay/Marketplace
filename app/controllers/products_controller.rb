@@ -72,7 +72,7 @@ class ProductsController < ApplicationController
    def place_order
       Order.create(
         product_id: @product_id,
-        seller_id: @product.user_id,
+        seller_id: @product.user.id,
         buyer_id: current_user.id
       )
 
