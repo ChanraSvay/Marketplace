@@ -11,8 +11,7 @@ Selling secondhand clothing is beneficial to the environment since it lowers was
 https://github.com/ChanraSvay/Marketplace
 
 ##
-
-
+https://marketplaces-clothes.herokuapp.com/
 
 ## Purpose
 In the average home, 50% of the clothes remain unworn. We accumulate clothes when they are on sale and then discard them.
@@ -58,7 +57,12 @@ Clothes will be a marketplace for both new and worn undesired clothing. It will 
 - To see what items are sold
 
 ## Wireframe
-
+[Wireframe](https://ibb.co/1QhjKhy)
+[Wireframe](https://ibb.co/2MnrRQf)
+[Wireframe](https://ibb.co/rpD56tx)
+[Wireframe](https://ibb.co/MhnffnN)
+[Wireframe](https://ibb.co/ch9q6rx)
+[Wireframe](https://ibb.co/DQfZVyQ)
 ## ERD
 [ERD](https://ibb.co/94rNmsr)
 
