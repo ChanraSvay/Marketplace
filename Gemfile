@@ -74,3 +74,6 @@ gem "pay", "~> 3.0"
 gem "stripe", "~> 6.0"
 
 gem "matrix", "~> 0.4.2"
+
+gem 'carrierwave', '~> 2.0'
+gem 'fog', '~> 1.38'
