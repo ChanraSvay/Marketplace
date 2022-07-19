@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: %i[ show edit update destroy place_oder ]
+  before_action :set_product, only: %i[ show edit update destroy place_order ]
   before_action :set_form_vars, only: %i[ new edit ]
   before_action :authenticate_user!, except: [:index, :show]
   before_action :authorize_user, only: [:edit, :update, :destroy]
@@ -33,7 +33,7 @@ class ProductsController < ApplicationController
   # POST /products or /products.json
   def create
     @product = Product.new(product_params)
-    @product.user = current_user
+    @product.user_id = current_user.id
 
     respond_to do |format|
       if @product.save
@@ -72,11 +72,11 @@ class ProductsController < ApplicationController
    def place_order
       Order.create(
         product_id: @product_id,
-        seller_id: @product.user.id,
+        seller_id: @product.user_id,
         buyer_id: current_user.id
       )
 
-      @product.update(sold: true)
+      @product.update(sold: "sold")
       redirect_to order_success_path
     end
 

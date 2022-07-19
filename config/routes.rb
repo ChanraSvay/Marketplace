@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
+  get '/dashboard', to: 'dashboard#index', as: :dashboard
+  get 'dashboard/products'
+
   resources :products
+
   devise_for :users
+  
   root 'pages#home'
 
   post 'products/:id/order', to: 'products#place_order', as: 'place_order'

@@ -11,39 +11,39 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :description %>
     <%= form.rich_text_area :description %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :price %>
     <%= form.number_field :price %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <% @conditions.each do |option| %>
     <%= form.label :condition, format_condition(option) %>
     <%= form.radio_button :condition, option %>
     <% end %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :category_id %>
     <%= form.select :category_id, @categories.map {|c| [c.name, c.id]} %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :picture %>
     <%= form.file_field :picture, accept: "image/png,image/jpeg,image/jpg"%>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group">
+    <%= form.submit "Create Product", class: "btn btn-lg btn-success" %>
   </div>
 <% end %>
