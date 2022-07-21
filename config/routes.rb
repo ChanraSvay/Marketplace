@@ -10,7 +10,11 @@ Rails.application.routes.draw do
 
   post 'products/:id/order', to: 'products#place_order', as: 'place_order'
 
+  post 'checkout/create', to: 'checkout#create' 
+
   get 'pages/success', to: 'pages#success', as: 'order_success'
+
+
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
