@@ -10,9 +10,10 @@ Rails.application.routes.draw do
 
   post 'products/:id/order', to: 'products#place_order', as: 'place_order'
 
-  post 'checkout/create', to: 'checkout#create' 
+  post 'checkout/create' => 'checkout#create', as: 'checkout_create'
 
   get 'pages/success', to: 'pages#success', as: 'order_success'
+  
 
 
 

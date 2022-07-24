@@ -2,7 +2,8 @@ var stripe = Stripe("<%= Rails.application.credentails[:stripe][:public_key] %>"
 
 var checkoutButton = document.getElementById( 'checkout-button');
 
-    stripe.redirectToCheckout({
-        sessionId: '<%= @session.id  %>'
-    }).then(function (result) {
-    });
+   stripe.redirectToCheckout({
+    sessionId: '<%= @session.id %>'
+}).then(function (result) {
+    console.log(result.error_message)
+});

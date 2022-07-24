@@ -10,7 +10,8 @@
 
   <div class="field">
     <%= f.label :username %><br />
-    <%= f.text_field :username, autofocus: true %>
+    <%# <%= f.text_field :username, autofocus: true %> 
+    <%= f.collection_select(:user_id, @user, :id, :username) %>
   </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
