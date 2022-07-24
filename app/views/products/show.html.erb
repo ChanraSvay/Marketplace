@@ -16,10 +16,11 @@
 <% if @product.sold %>
 <h2>SOLD</h2>
 <% elsif current_user && !@product.sold %>
-<%= button_to "Buy now", place_order_path, class: "nav-link"%> 
+<%# <%= button_to "Buy now", "https://buy.stripe.com/test_eVa9EyfETeHI5xudQQ", class: "nav-link"  %>   
+<%= button_to "Buy now", place_order_path, class: "nav-link"%>  
 <%# <td><%= button_to "Buy now!", checkout_create_path, params: {:product_id => @product.id }, remote: true %></td> 
 
-<%# <%= button_to 'Buy now!', checkout_create_path, params: {id: @product.id}, remote: true %> 
+<%= button_to 'Buy now!', checkout_create_path, params: {id: @product.id}, remote: true %> 
 <% else %>
 <p> Please log in to purchase</p>
 <% end %>
@@ -58,4 +59,5 @@
 <%= link_to 'Edit', edit_product_path(@product), class:"btn btn-secondary" %> |
 <% end %>
 <%= link_to 'Back', products_path, class:"btn btn-dark"  %>
+</div>
 </div>
