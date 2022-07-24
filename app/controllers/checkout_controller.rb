@@ -18,5 +18,4 @@ class CheckoutController < ApplicationController
         format.json
     end
    end
-
- 
+  end

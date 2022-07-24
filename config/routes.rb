@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   post 'checkout/create', to: 'checkout#create'
 
+  get 'pages/checkout', to: 'pages#checkout'
+
   get 'pages/success', to: 'pages#success', as: 'order_success'
   
 
