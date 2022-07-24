@@ -21,7 +21,7 @@ Clothes will be a marketplace for both new and worn undesired clothing. It will 
 
 ## Functionality/ features
 
- - User can go the website
+- User can go the landing page (website)
 - They will be prompt to sign in or sign up to access the products
 - Once sign in they can view products that are currently listed
 - User can add new products to the listing page and also edit and delete.
@@ -31,9 +31,9 @@ Clothes will be a marketplace for both new and worn undesired clothing. It will 
 [Sitemap](https://ibb.co/NYr766H)
 
 ## Target audience
-- 16 years and over.
--  Must be eligible to hold a bank account as the payment will be taken from the account
-- Any genders. It’s aimed for both Men and women
+- All genders.
+- For anyone who wants to make some extra money for clothes they have no used for
+
 
 ## Tech stack
 - Ruby on rails -
@@ -81,7 +81,7 @@ Clothes will be a marketplace for both new and worn undesired clothing. It will 
 - Can also edit and delete if you user change their minds
 
 ## Details any third services that your app will use
-- Heroku - for wweb hosting
+- Heroku - for web hosting
 - Devise - for handling user authentication 
 - Bootstrap - Rails gems for styling
 
